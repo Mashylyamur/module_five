@@ -3,11 +3,14 @@ data = {}
 with open('model.json', 'w') as f:
     json.dump(data, f)
 class Model:
-    pass
+    def __init__(self):
+        self.title = '1'
+        self.text = '2'
+        self.author = '3'
     def save(self):
         with open('model.json', 'r') as f:
             data = json.load(f)
-            data = dir(Model)
+            Model.__dict__
         with open('model.json', 'w') as f:
             json.dump(data, f)
 s = Model()
