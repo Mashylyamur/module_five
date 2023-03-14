@@ -10,11 +10,11 @@ w2 = Warrior('Warrior_two', 100)
 while True:
     x = input('Введите 1, если бьет первый воин, 2 - если второй: ')
     if w1.health > 1 and w2.health > 1:
-        if x == str(1):
+        if x == '1':
             w2.hit(w1)
             print('Аттаковал: ', w1.name)
             print('Здоровье ', w2.name, ':', w2.health)
-        elif x == str(2):
+        elif x == '2':
             w1.hit(w2)
             print('Аттаковал: ', w2.name)
             print('Здоровье ', w1.name, ':', w1.health)
